@@ -1,0 +1,65 @@
+:root {
+  --basic-color: #235984;
+  --background-color: rgba(35, 89, 132, 0.08);
+  --background-color-hover: rgba(35, 89, 132, 0.2);
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src:
+    local("Comfortaa Bold"),
+    local("Comfortaa-Bold"),
+    url("../fonts/comfortaa/Comfortaa-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src:
+    local("Comfortaa Light"),
+    local("Comfortaa-Light"),
+    url("../fonts/comfortaa/Comfortaa-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src:
+    local("Comfortaa Regular"),
+    local("Comfortaa-Regular"),
+    url("../fonts/comfortaa/Comfortaa-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms Pro";
+  src:
+    local("TT Norms Pro Bold"),
+    local("TTNormsPro-Bold"),
+    url("../fonts/norms-pro/TTNormsPro-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Norms Pro";
+  src:
+    local("TT Norms Pro Regular"),
+    local("TTNormsPro-Regular"),
+    url("../fonts/norms-pro/TTNormsPro-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Norms Pro";
+  src:
+    local("TT Norms Pro Regular"),
+    local("TTNormsPro-Regular"),
+    url("../fonts/norms-pro/TTNormsPro-Medium.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
