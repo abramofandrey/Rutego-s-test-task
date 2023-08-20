@@ -1,11 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Тестовое Рутего</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img class="logo__link" src="img/logo.svg" alt="logo">
+          </a>
+          <form action="">
+            <input type="text" name="search" id="search">
+          </form>
+          <ul class="icon">
+            <li class="icon__item">
+              <a class="icon__link" href="#">
+                <img class="icon__image icon__user" src="img/user-logo.svg" alt="user icon">
+              </a>
+            </li>
+            <li class="icon__item">
+              <a class="icon__link" href="#">
+                <img class="icon__image icon__favorite" src="img/favorite-logo.svg" alt="favorite icon">
+              </a>
+            </li>
+            <li class="icon__item">
+              <a class="icon__link" href="#">
+                <img class="icon__image icon__bag" src="img/bag-logo.svg" alt="icon bag">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-menu__container">
+          <nav class="menu">
+            <button class="button button--catalog">Каталог</button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="" class="menu__list-link menu__list-link--active">матрасы</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__list-link">кровати</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__list-link">акссесуары</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__list-link">распродажа</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__list-link">контакты</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__list-link">доставка и оплата</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__list-link">партнерам</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-menu__callback">
+            <a class="phone" href="tel:74957872747">+7 (495) 787-27-47</a>
+            <a class="email" href="#">info@matras.ru</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main__inner">
+          <div class="main__content">
+            <h1 class="main__title">ЛУЧШИЕ МАТРАСЫ ДЛЯ ВАШЕГО КОМФОРТА</h1>
+            <p class="main__text">Матрас – это один из самых важных элементов для нашего комфорта и здоровья во время
+              сна. Он выполняет несколько функций, таких как поддержка тела, снижение давления на позвоночник,
+              уменьшение болевых ощущений и расслабление мышц</p>
+            <a class="application-btn" href="#">Связаться с нами</a>
+          </div>
+          <div class="main__image">
+            <img class="main__image-item" src="img/main-foto.jpg" alt="room interior">
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog__inner">
+          <ul class="catalog-menu__list">
+            <li class="catalog-menu__item">
+              <a class="catalog-menu__link" href="#">
+                <div class="catalog-card">
+                  <img class="catalog-card__image" src="img/card-pic1.jpg" alt="">
+                  <div class="catalog-card__overlay">
+                    <h2 class="catalog-card__title">матрасы</h2>
+                    <p class="catalog-car__text">Более 100 моделей матрасов для Вашего комфортного сна</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="catalog-menu__item">
+              <a class="catalog-menu__link" href="#">
+                <div class="catalog-card">
+                  <img class="catalog-card__image" src="img/card-pic2.jpg" alt="">
+                  <div class="catalog-card__overlay">
+                    <h2 class="catalog-card__title">кровати</h2>
+                    <p class="catalog-car__text">Более 100 моделей матрасов для Вашего комфортного сна</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="catalog-menu__item">
+              <a class="catalog-menu__link" href="#">
+                <div class="catalog-card">
+                  <img class="catalog-card__image" src="img/card-pic3.jpg" alt="">
+                  <div class="catalog-card__overlay">
+                    <h2 class="catalog-card__title">акссесуары</h2>
+                    <p class="catalog-car__text">Более 100 моделей матрасов для Вашего комфортного сна</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="bestsellers">
+      <div class="container">
+        <div class="bestsellers__inner">
+          <h1 class="bestsellers__title">Хиты продаж</h1>
+        </div>
+        <div class="bestsellers__slider">
+          <div class="slider-card">
+            <img class="slider-card__images" src="img/slider-foto.jpg" alt="">
+            <div class="slider-card__price-content">
+              <div class="slider-card__price-wrapper">
+                <span class="slider-card__price slider-card__price--current">14 894</span>
+                <span class="slider-card__price slider-card__price--sale">34 993</span>
+              </div>
+              <span class="slider-card__btn-sale">-57%</span>
+            </div>
+            <p class="card-slider__description">Кровать Avril</p>
+          </div>
+          <button class="card-slider__btn">Купить</button>
+          <div class="slider-card">
+            <img class="slider-card__images" src="img/slider-foto.jpg" alt="">
+            <div class="slider-card__price-content">
+              <div class="slider-card__price-wrapper">
+                <span class="slider-card__price slider-card__price--current">14 894</span>
+                <span class="slider-card__price slider-card__price--sale">34 993</span>
+              </div>
+              <span class="slider-card__btn-sale">-57%</span>
+            </div>
+            <p class="card-slider__description">Кровать Avril</p>
+          </div>
+          <button class="card-slider__btn">Купить</button>
+          <div class="slider-card">
+            <img class="slider-card__images" src="img/slider-foto.jpg" alt="">
+            <div class="slider-card__price-content">
+              <div class="slider-card__price-wrapper">
+                <span class="slider-card__price slider-card__price--current">14 894</span>
+                <span class="slider-card__price slider-card__price--sale">34 993</span>
+              </div>
+              <span class="slider-card__btn-sale">-57%</span>
+            </div>
+            <p class="card-slider__description">Кровать Avril</p>
+          </div>
+          <button class="card-slider__btn">Купить</button>
+          <div class="slider-card">
+            <img class="slider-card__images" src="img/slider-foto.jpg" alt="">
+            <div class="slider-card__price-content">
+              <div class="slider-card__price-wrapper">
+                <span class="slider-card__price slider-card__price--current">14 894</span>
+                <span class="slider-card__price slider-card__price--sale">34 993</span>
+              </div>
+              <span class="slider-card__btn-sale">-57%</span>
+            </div>
+            <p class="card-slider__description">Кровать Avril</p>
+          </div>
+          <button class="card-slider__btn">Купить</button>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__inner">
+          <div class="page-footer__contacts">
+            <a class="logo" href="#">
+              <img class="logo__link" src="img/logo.svg" alt="logo">
+              <a class="phone" href="tel:74957872747">+7 (495) 787-27-47</a>
+              <a class="email" href="#">info@matras.ru</a>
+              <a class="adress" href="#">Наше производство: Московская обл., Ленинский р-н, д. Мыльная</a>
+            </a>
+          </div>
+          <div class="page-footer__block-group">
+            <div class="page-footer__item">
+              <h3 class="page-footer__header">Матрасы</h3>
+              <ul class="page-footer__list">
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Матрасы с независимым пружинным блоком</a>
+                </li>
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Матрасы с пружинным блоком Поллинг</a>
+                </li>
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Каталог матрасов с пружинным блоком Мультипакет</a>
+                </li>
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Матрасы на пружинном блоке Боннель</a>
+                </li>
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Беспружинные матрасы</a>
+                </li>
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Круглые матрасы</a>
+                </li>
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Детские Матрасы</a>
+                </li>
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Индивидуальные матрасы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__item">
+              <h3 class="page-footer__header">аксессуары</h3>
+              <ul class="page-footer__list">
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Подушки</a>
+                </li>
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Одеяла</a>
+                </li>
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Защитные наматрасники</a>
+                </li>
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Выравнивающие наматрасники, топперы</a>
+                </li>
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Пуфики, банкетки</a>
+                </li>
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Водонепроницаемые наматрасники</a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__item">
+              <h3 class="page-footer__header">кровати</h3>
+              <ul class="page-footer__list">
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Круглые кровати</a>
+                </li>
+                <li class="page-footer__item">
+                  <a class="page-footer__link" href="#">Интерьерные кровати</a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__item">
+              <nav class="page-footer__menu">
+                <ul class="page-footer__menu-list">
+                  <li class="page-footer__menu-item">
+                    <a class="page-footer__menu-link" href="#">распродажа</a>
+                  </li>
+                  <li class="page-footer__menu-item">
+                    <a class="page-footer__menu-link" href="#">о нас</a>
+                  </li>
+                  <li class="page-footer__menu-item">
+                    <a class="page-footer__menu-link" href="#">контакты</a>
+                  </li>
+                  <li class="page-footer__menu-item">
+                    <a class="page-footer__menu-link" href="#">доставка и оплата</a>
+                  </li>
+                  <li class="page-footer__menu-item">
+                    <a class="page-footer__menu-link page-footer__menu-link--active" href="#">партнерам</a>
+                  </li>
+
+              </nav>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
 </html>
