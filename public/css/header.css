@@ -1,0 +1,179 @@
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.header-form__input {
+  width: 978px;
+  height: 56px;
+  border: 1px solid #c8c8c8;
+  border-radius: 10px;
+  padding: 1em 1.2em;
+  font-family: "TT Norms Pro", sans-serif;
+  color: #191919;
+  font-size: 1.25em;
+}
+
+.header-form {
+  position: relative;
+}
+
+.header-form__input::placeholder {
+  font-family: "TT Norms Pro", sans-serif;
+  color: #191919;
+  font-size: 1.25em;
+}
+
+.header-form__icon-search {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  transition: all 0.4s;
+}
+
+.header-form__icon-search:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.icon__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.icon__image {
+  transition: all 0.4s ease;
+}
+
+.icon__image:hover {
+  transform: scale(1.1);
+}
+
+.header-menu__container {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu__container .menu {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.menu__list-link {
+  font-family: "TT Norms Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 5px;
+  transition: all 0.5s;
+  border-bottom: 1px solid transparent;
+}
+
+.menu__list-link:hover {
+  border-bottom: 1px solid var(--basic-color);
+}
+
+.header-menu__callback {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header-menu__callback .phone {
+  font-family: "TT Norms Pro";
+  font-size: 1.125em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #000;
+}
+
+.header-menu__callback .email {
+  font-family: "TT Norms Pro";
+  font-size: 1.125em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  color: #000;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 14px 25px;
+  width: 155px;
+  height: 47px;
+  border-radius: 10px;
+  background: var(--background-color);
+  border: none;
+  color: var(--basic-color);
+  font-family: TT Norms Pro;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.button:hover {
+  background: var(--background-color-hover);
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+  .header-form__input {
+    width: 700px;
+  }
+  .menu__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 6px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+  .header-form__input {
+    width: 400px;
+  }
+  .menu__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .header-form__input {
+    width: 300px;
+  }
+  .icon__list {
+    gap: 20px;
+  }
+  .menu__list {
+    display: none;
+  }
+}

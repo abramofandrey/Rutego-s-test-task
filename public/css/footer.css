@@ -1,0 +1,100 @@
+.page-footer {
+  margin-top: 100px;
+  padding: 150px 109px;
+  background: rgba(208, 233, 255, 0.2);
+}
+
+.page-footer__inner {
+  display: flex;
+}
+
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.page-footer__contacts .phone {
+  color: #152d53;
+  font-family: TT Norms Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.page-footer__contacts .email,
+.page-footer__contacts .address {
+  color: #152d53;
+  font-family: "TT Norms Pro";
+  font-size: 1.125em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.page-footer__block-group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 43px;
+  grid-row-gap: 0px;
+  padding-left: 150px;
+}
+
+.page-footer__header-title {
+  color: #000;
+  font-family: "TT Norms Pro";
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.page-footer__item {
+  padding-bottom: 1.125em;
+}
+
+.page-footer__link {
+  color: #666;
+  font-family: "TT Norms Pro";
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.5s ease-in-out;
+}
+
+.page-footer__item .page-footer__link:hover {
+  color: var(--basic-color);
+  transform: scale(1.1);
+}
+
+.page-footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.page-footer__menu-link {
+  font-family: "TT Norms Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.page-footer__menu-link--active {
+  font-weight: 700;
+  color: var(--basic-color);
+}
+
+.page-footer__menu-link:hover {
+  font-weight: 700;
+  color: var(--basic-color);
+}

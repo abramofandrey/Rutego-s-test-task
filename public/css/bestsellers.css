@@ -1,0 +1,195 @@
+.bestsellers {
+  margin-top: 100px;
+}
+
+.bestsellers__title {
+  font-family: "Comfortaa";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 147%;
+  text-transform: uppercase;
+  color: var(--title-color);
+  margin-bottom: 40px;
+}
+
+.bestsellers__slider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider-card {
+  position: relative;
+  width: 390px;
+  height: 496px;
+  border-radius: 20px;
+  background: #e9eff3;
+  overflow: hidden;
+  padding: 23px;
+}
+
+.slider-card__images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+
+.slider-card svg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  transition: all 0.4s;
+}
+.slider-card svg:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.slider-card__price-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 340px;
+}
+
+.slider-card__price-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.slider-card__price {
+  color: var(--title-color);
+  font-family: "Comfortaa";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 147%;
+  text-transform: uppercase;
+}
+
+.slider-card__price--sale {
+  color: #8c8c8c;
+  font-weight: 300;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+}
+
+.slider-card__btn-sale {
+  width: 79px;
+  height: 33px;
+  border-radius: 20px;
+  background: #237284;
+  color: #fff;
+  font-family: "Comfortaa";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-slider__description {
+  color: #5b5b5b;
+  font-family: "TT Norms Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.card-slider__btn {
+  padding: 15px;
+  margin-top: 13px;
+  width: 100%;
+  font-family: "TT Norms Pro";
+  font-size: 1.25em;
+  font-style: normal;
+  color: var(--basic-color);
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1.42px solid #235984;
+  transition: all 0.4s;
+}
+
+.card-slider__btn:hover {
+  background-color: var(--basic-color);
+  color: #e9eff3;
+  cursor: pointer;
+}
+
+.bestsellers__slider-buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.bestsellers__btn-prev,
+.bestsellers__btn-next {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: var(--background-color);
+  border-radius: 50%;
+  border: none;
+  transition: all 0.3s;
+}
+
+.bestsellers__btn-prev:hover,
+.bestsellers__btn-next:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
+.bestsellers__btn-prev::after {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid var(--basic-color);
+  border-bottom: 2px solid var(--basic-color);
+  transform: rotate(45deg);
+  transition: all 0.3s;
+}
+.bestsellers__btn-next::after {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--basic-color);
+  border-bottom: 2px solid var(--basic-color);
+  transform: rotate(-45deg);
+}
+
+.bestsellers__btn-prev:hover::after {
+  left: 18px;
+}
+
+.bestsellers__btn-next:hover::after {
+  left: 22px;
+}
+
+.bestsellers__inner div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+  
+}
